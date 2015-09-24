@@ -4,6 +4,7 @@
 public class InvertString {
 
     public String reverse(String string){
+        System.out.println("    Revers STRING");
         System.out.println("Before "+string);
         char[] charArray =  string.toCharArray();
         for (int i = 0; i < charArray.length/2 ; i++) {
@@ -12,7 +13,7 @@ public class InvertString {
             charArray[i] = temp;
         }
         string = new String(charArray);
-        System.out.println("After "+string);
+        System.out.println("After "+string  +"\n");
         return string;
     }
 }

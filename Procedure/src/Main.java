@@ -8,12 +8,14 @@ public class Main {
 
         InvertArray invertArray = new InvertArray();
         InvertString invertString = new InvertString();
+        SortArray sortArray = new SortArray();
 
 
-       // invertArray.reverse(10);
-        //invertString.reverse("Valera");
-       // invertArray.changeElement(5);
-            invertArray.findMax(5);
+        invertArray.reverse(10);
+        invertString.reverse("Valera create Array");
+        invertArray.changeElement(5);
+        sortArray.sortbabble(5);
+        sortArray.findMax(6);
 
         for (int k  = 1 ; k<10; k++){
         //System.out.println(k+"/0 = "+((double)k/0));// double/2
