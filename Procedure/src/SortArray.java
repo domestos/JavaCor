@@ -38,4 +38,21 @@ public class SortArray extends  CreatArray{
         return myArray;
     }
 
+    public int[] sortBin(int k , int f){
+        int[] myArray = getMySortArray(k);
+        int l = myArray.length/2;
+        while(true ){
+
+            if(f!=myArray[l]){
+             if(f<myArray[l]){l=l+(myArray.length-l)/2 ;}else{l=l-(myArray.length-l)/2;}
+
+            }else{
+                break;
+            }
+
+        }
+
+        return  myArray;
+    }
+
 }

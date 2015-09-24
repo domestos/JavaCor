@@ -16,4 +16,13 @@ public class CreatArray  {
         System.out.println("Before "+ Arrays.toString(myArray));
         return myArray;
     }
+
+    protected  int[] getMySortArray(int k){
+        myArray = new int[k];
+        for (int i = 0; i < k ; i++) {
+            myArray[i]=i;
+        }
+        System.out.println("Before "+ Arrays.toString(myArray));
+        return myArray;
+    }
 }
