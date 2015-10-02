@@ -29,12 +29,13 @@ public class Main {
         linkidListClass.addElement(element);
         hashSetClass.addElement(element);
         linkedHashSetClass.addElement(element);
-        // add in begining
-        arrayListClass.addElement(0,element);
-        linkidListClass.addElement(0,element);
+
+        // ========== INSERT ==================
+        arrayListClass.inserElement(0,element);
+        linkidListClass.inserElement(0,element);
         // add in index
-        arrayListClass.addElement(2,element);
-        linkidListClass.addElement(2,element);
+        arrayListClass.inserElement(4,element);
+        linkidListClass.inserElement(4,element);
 
         //=========== FIND =============
         arrayListClass.findByInt(findE, element);
@@ -84,23 +85,23 @@ public class Main {
 
         //====================END
         System.out.print("ArrayList   add END ");
-        List list = arrayListClass.addElement(element);
+        List list = arrayListClass.inserElement(element);
 
 
         System.out.print("LinkedList  add END ");
-        linkidListClass.addElement(element);
+        linkidListClass.inserElement(element);
 
         //==================== BEGINING
         System.out.print("ArrayList   add BEGINING ");
-        arrayListClass.addElement(0, element);
+        arrayListClass.inserElement(0, element);
 
         System.out.print("LinkedList  add BEGINING ");
-        linkidListClass.addElement(0, element);
+        linkidListClass.inserElement(0, element);
 
         //==================== LIST.SIZE( )/2
         System.out.print("ArrayList   Add list.size()/2 ");
-        arrayListClass.addElement(5, element);
+        arrayListClass.inserElement(5, element);
 
         System.out.print("LinkedList  Add list.size()/2 ");
-        linkidListClass.addElement(5, element);
+        linkidListClass.inserElement(5, element);
 */

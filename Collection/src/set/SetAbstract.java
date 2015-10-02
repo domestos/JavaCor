@@ -28,7 +28,7 @@ public abstract class SetAbstract implements SetInterface  {
     }
 
     @Override
-    public Set addElement(int index, int e) {
+    public Set inserElement(int index, int e) {
 
         return null;
     }

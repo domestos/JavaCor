@@ -28,15 +28,17 @@ public abstract class ListAbstract implements ListInterface {
     }
 
     @Override
-    public List addElement(int index, int e) {
+    public List inserElement(int index, int e) {
         List list =  create();
-        int indexTemp = index;
         long  timeStart = System.currentTimeMillis();
-        for (int j = 0; j < e  ; j++) {
-            if(indexTemp !=0){
-                if(indexTemp >=list.size()){index=0;}else {index=(list.size())/2;}
+        if (index !=0){
+            for (int j = 0; j < e  ; j++) {
+               list.add((list.size())/index,"String " + j);
             }
-            list.add(index,"String " + j);
+        }else{
+            for (int j = 0; j < e  ; j++) {
+                list.add(index,"String " + j);
+            }
         }
         long timeEnd = System.currentTimeMillis();
        System.out.println(" Time  = "+(timeEnd - timeStart) + " ms \n");

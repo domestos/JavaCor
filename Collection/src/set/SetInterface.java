@@ -28,7 +28,7 @@ public interface SetInterface {
      * @param e  - quantity of elements in the collection
      * @return - collection Set (ArraySet or linkedSet)
      */
-    Set addElement(int index, int e);
+    Set inserElement(int index, int e);
 
 
     /**

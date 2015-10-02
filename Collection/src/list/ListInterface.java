@@ -26,7 +26,7 @@ public interface ListInterface {
     * @param e  - quantity of elements in the collection
     * @return - collection list (ArrayList or linkedList)
     */
-    List addElement(int index, int e);
+    List inserElement(int index, int e);
 
 
     /**

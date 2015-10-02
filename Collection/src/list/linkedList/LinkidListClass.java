@@ -23,9 +23,13 @@ public class LinkidListClass extends ListAbstract{
     }
 
     @Override
-    public List addElement(int index, int e) {
-        System.out.println("LinkedList ADD BEGIN or list.size())/2");
-        return super.addElement(index, e);
+    public List inserElement(int index, int e) {
+        if(index>0){
+            System.out.println("LinkedList INSERT at the CAPACITY = (list.size())/"+index);
+        }else{
+            System.out.println("LinkedList INSERT at the BEGINNING  (FIRST CAPACITY) ");
+        }
+        return super.inserElement(index, e);
     }
 
     @Override
