@@ -21,5 +21,18 @@ public class LinkedHashSetClass extends SetAbstract {
         System.out.println("LinkedHashSet ADD");
         return super.addElement(e);
     }
+
+
+    @Override
+    public void findByObject( int f, int e) {
+        System.out.println("LinkedHashSet findByObject");
+        super.findByObject(f, e);
+    }
+
+    @Override
+    public void removeRandom(int n, int e) {
+        System.out.println("LinkedHashSet removeRandom");
+        super.removeRandom(n, e);
+    }
 }
 

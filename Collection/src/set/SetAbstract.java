@@ -1,6 +1,5 @@
 package set;
 
-import java.util.Iterator;
 import java.util.Random;
 import java.util.Set;
 
@@ -28,44 +27,36 @@ public abstract class SetAbstract implements SetInterface  {
     }
 
     @Override
-    public Set inserElement(int index, int e) {
-
-        return null;
-    }
-
-    @Override
-    public Set findByInt(int f, int e) {
-        Set set = add(e);
-        Set findSet = null;
+    public void findByObject( int f,int e) {
+    Set set = add(e);
         Random r = new Random();
-        Iterator iterator = set.iterator();
+        long  timeStart = System.currentTimeMillis();
+        int findElement=0;
+        for (int i = 0; i<f; i++){
+            String s = "String "+r.nextInt(e);
+            if ( set.contains(s)) {findElement++;}
+        }
+        System.out.println(" you find  "+findElement+" element");
+        long timeEnd = System.currentTimeMillis();
 
-        for (int i = 0; i <f ; i++) {
-         while (iterator.hasNext()) {
-             System.out.println(iterator.next());
-         }
-
-           }
-        return findSet;
+        System.out.println(" Time  = " + (timeEnd - timeStart) + " ms \n ");
     }
 
-    @Override
-    public Set findByObject(int f, int e) {
-        return null;
-    }
 
     @Override
-    public Set removeEnd(int n, int e) {
-        return null;
-    }
+    public void removeRandom(int n, int e) {
+        Set set = add(e);
+        Random r = new Random();
+        int deleteElement=0;
+        int findElement=0;
+        long  timeStart = System.currentTimeMillis();
+        for (int i = 0; i<n; i++){
+            String s = "String "+String.valueOf(r.nextInt(e));
+            if ( set.remove(s)) {deleteElement++;}
 
-    @Override
-    public Set removeBegining(int n, int e) {
-        return null;
-    }
-
-    @Override
-    public Set removeRandom(int n, int e) {
-        return null;
+        }
+        long timeEnd = System.currentTimeMillis();
+        System.out.println(" you delete "+deleteElement+" element");
+        System.out.println(" Time  = " + (timeEnd - timeStart) + " ms \n ");
     }
 }

@@ -21,4 +21,16 @@ public class HashSetClass extends SetAbstract {
         System.out.println("HashSet ADD");
         return super.addElement(e);
     }
+
+    @Override
+    public void findByObject( int f, int e) {
+        System.out.println("HashSet findByObject");
+       super.findByObject(f,e);
+    }
+
+    @Override
+    public void removeRandom(int n, int e) {
+        System.out.println("HashSet removeRandom");
+      super.removeRandom(n, e);
+    }
 }

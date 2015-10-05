@@ -16,92 +16,45 @@ public class Main {
         HashSetClass hashSetClass = new HashSetClass();
         LinkedHashSetClass linkedHashSetClass = new LinkedHashSetClass();
 
-        int element = 90000;  // quantity elements in the list
-        int findE = 300;    // how elements need find
-        int rmE =5000;     // how elements need remove
+        int element = 9000000;  // quantity elements in the list
+        int findE = 4000;    // how elements need find
+        int rmE =40;     // how elements need remove
 
-
-
-
-        //=========== ADD =============
-        //add in end
+//        //=========== ADD =============
         arrayListClass.addElement(element);
         linkidListClass.addElement(element);
         hashSetClass.addElement(element);
         linkedHashSetClass.addElement(element);
-
-        // ========== INSERT ==================
-        arrayListClass.inserElement(0,element);
-        linkidListClass.inserElement(0,element);
-        // add in index
-        arrayListClass.inserElement(4,element);
-        linkidListClass.inserElement(4,element);
-
-        //=========== FIND =============
-        arrayListClass.findByInt(findE, element);
-        linkidListClass.findByInt(findE, element);
-
-        arrayListClass.findByObject(findE, element);
-        linkidListClass.findByObject(findE, element);
-
-        //========== REMOVE ============
-        arrayListClass.removeEnd(rmE, element);
-        linkidListClass.removeEnd(rmE, element);
-
-        arrayListClass.removeBegining(rmE,element);
-        linkidListClass.removeBegining(rmE,element);
-
-        arrayListClass.removeRandom(rmE,element);
-        linkidListClass.removeRandom(rmE,element);
+//
+//        // ========== INSERT ==================
+//        arrayListClass.inserElement(0,element);
+//        linkidListClass.inserElement(0,element);
+//        // add in index
+//        arrayListClass.inserElement(4,element);
+//        linkidListClass.inserElement(4,element);
+//
+//        //=========== FIND =============
+//        arrayListClass.findByInt(findE, element);
+//        linkidListClass.findByInt(findE, element);
+//
+//        arrayListClass.findByObject(findE, element);
+//        linkidListClass.findByObject(findE, element);
+//         hashSetClass.findByObject(findE,element);
+//        linkedHashSetClass.findByObject(findE,element);
+//
+//        //========== REMOVE ============
+//        arrayListClass.removeEnd(rmE, element);
+//        linkidListClass.removeEnd(rmE, element);
+//
+//        arrayListClass.removeBegining(rmE,element);
+//        linkidListClass.removeBegining(rmE,element);
+//
+//        arrayListClass.removeRandom(rmE,element);
+//        linkidListClass.removeRandom(rmE,element);
+//        hashSetClass.removeRandom(rmE,element);
+//        linkedHashSetClass.removeRandom(rmE,element);
 
     }
 
 }
 
-
-/*
-
-        //========== REMOVE ============
-        System.out.println("ArrayList");
-        arrayListClass.removeBegining(rmE, element);
-        arrayListClass.removeEnd(rmE, element);
-        arrayListClass.removeRandom(rmE, element);
-
-        System.out.println("LinkedList");
-        linkidListClass.removeBegining(rmE, element);
-        linkidListClass.removeEnd(rmE, element);
-        linkidListClass.removeRandom(rmE, element);
-
-        //=========== FIND =============
-        System.out.println("ArrayList");
-        arrayListClass.findByInt(findE, element);
-        arrayListClass.findByObject(findE, element);
-
-        System.out.println("LinkedList");
-        linkidListClass.findByInt(findE, element);
-        linkidListClass.findByObject(findE, element);
-
-        //=========== ADD =============
-
-        //====================END
-        System.out.print("ArrayList   add END ");
-        List list = arrayListClass.inserElement(element);
-
-
-        System.out.print("LinkedList  add END ");
-        linkidListClass.inserElement(element);
-
-        //==================== BEGINING
-        System.out.print("ArrayList   add BEGINING ");
-        arrayListClass.inserElement(0, element);
-
-        System.out.print("LinkedList  add BEGINING ");
-        linkidListClass.inserElement(0, element);
-
-        //==================== LIST.SIZE( )/2
-        System.out.print("ArrayList   Add list.size()/2 ");
-        arrayListClass.inserElement(5, element);
-
-        System.out.print("LinkedList  Add list.size()/2 ");
-        linkidListClass.inserElement(5, element);
-*/

@@ -74,7 +74,7 @@ public abstract class ListAbstract implements ListInterface {
     public List findByObject(int f, int e) {
         List list = add(e);
 
-         List findList =null;
+         List findList ;
 
         if( list.getClass().getName()=="java.util.ArrayList"){
             findList = new ArrayList();
